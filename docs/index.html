@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Clustering Leaderboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1 class="topic">🌾 Rice Clustering Leaderboard</h1>
+    <p>🕓 Lastest update: 10/05/2021 22:30:06</p>
+    <p>(Update every 30 minutes, up to 5 files per submission)</p>
+
+    <div class="tabs-bar">
+      <button onclick="opentab('all')">All</button>
+      <button onclick="opentab('max')">Ranking</button>
+    </div>
+
+    <div id="all" class="tab" style="display:block">
+    <table border="1" class="dataframe leaderboard">
+  <thead>
+    <tr style="text-align: left;">
+      <th></th>
+      <th>name</th>
+      <th>filename</th>
+      <th>purity</th>
+      <th>nmi</th>
+      <th>rand_index</th>
+      <th>score</th>
+      <th>note</th>
+    </tr>
+  </thead>
+  <tbody>
+    
+  </tbody>
+</table>
+    </div>
+
+    <div class="learnmore">
+    <p>
+        The evaluation metric for this task are purity metric, normalized mutual information (NMI) and rand index.<br>
+        The score calculates by average all values from 3 metrics.<br>
+        <u>Learn more:</u>
+    </p>
+    <ul>
+        <li><a href="https://nlp.stanford.edu/IR-book/html/htmledition/evaluation-of-clustering-1.html">https://nlp.stanford.edu/IR-book/html/htmledition/evaluation-of-clustering-1.html</a></li>
+        <li><a href="https://gist.github.com/jhumigas/010473a456462106a3720ca953b2c4e2">https://gist.github.com/jhumigas/010473a456462106a3720ca953b2c4e2</a></li>
+        <li><a href="https://towardsdatascience.com/evaluation-metrics-for-clustering-models-5dde821dd6cd">https://towardsdatascience.com/evaluation-metrics-for-clustering-models-5dde821dd6cd</a></li>
+        <li><a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.normalized_mutual_info_score.html">https://scikit-learn.org/stable/modules/generated/sklearn.metrics.normalized_mutual_info_score.html</a></li>
+        <li><a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.rand_score.html#sklearn.metrics.rand_score">https://scikit-learn.org/stable/modules/generated/sklearn.metrics.rand_score.html#sklearn.metrics.rand_score</a></li>
+    </ul>
+    </div>
+</body>
+</html>
+    
