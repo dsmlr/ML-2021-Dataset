@@ -90,12 +90,12 @@ if __name__ == "__main__":
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Star Clustering Leaderboard</title>
+    <title>Rice Clustering Leaderboard</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 </head>
 <body>
-    <h1 class="topic">✨ Star Clustering Leaderboard</h1>
+    <h1 class="topic">🌾 Rice Clustering Leaderboard</h1>
     <p>🕓 Lastest update: {update_datetime}</p>
     <p>(Update every 30 minutes, up to 5 files per submission)</p>
 
