@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terrorist Attacks Leaderboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1 class="topic">Terrorist Attacks Leaderboard</h1>
+    <p>🕓 Lastest update: 21/04/2022 15:50:23</p>
+    <p>(Update every 30 minutes, up to 5 files per submission)</p>
+
+    <div class="tabs-bar">
+      <button onclick="opentab('all')">All</button>
+      <button onclick="opentab('max')">Ranking</button>
+    </div>
+
+    <div id="all" class="tab" style="display:block">
+    <table border="1" class="dataframe leaderboard">
+  <thead>
+    <tr style="text-align: left;">
+      <th></th>
+      <th>name</th>
+      <th>filename</th>
+      <th>accuracy</th>
+      <th>note</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td>นายพงศธร กิตติวรปัญญา</td>
+      <td>answer.csv</td>
+      <td>1.000000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>นายพงศธร กิตติวรปัญญา</td>
+      <td>answer copy.csv</td>
+      <td>0.999917</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+    </div>
+    <div id="max" class="tab" style="display:none">
+    <table border="1" class="dataframe leaderboard">
+  <thead>
+    <tr style="text-align: left;">
+      <th></th>
+      <th>name</th>
+      <th>filename</th>
+      <th>accuracy</th>
+      <th>note</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td>นายพงศธร กิตติวรปัญญา</td>
+      <td>answer.csv</td>
+      <td>1.0</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+    </div>
+
+    <div class="learnmore">
+    <p>
+        The evaluation metric for this task is accuracy<br>
+        Rank by accuracy value from highest to lowest.<br>
+        <u>Learn more:</u>
+    </p>
+    <ul>
+        <li><a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.accuracy_score.html</a><a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.accuracy_score.html</li>
+    </ul>
+    </div>
+</body>
+</html>
+    

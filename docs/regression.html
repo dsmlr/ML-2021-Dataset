@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COVID-19 2021 Leaderboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1 class="topic">COVID-19 2021 Leaderboard</h1>
+    <p>🕓 Lastest update: 21/04/2022 15:34:42</p>
+    <p>(Update every 30 minutes, up to 5 files per submission)</p>
+
+    <div class="tabs-bar">
+      <button onclick="opentab('all')">All</button>
+      <button onclick="opentab('max')">Ranking</button>
+    </div>
+
+    <div id="all" class="tab" style="display:block">
+    <table border="1" class="dataframe leaderboard">
+  <thead>
+    <tr style="text-align: left;">
+      <th></th>
+      <th>name</th>
+      <th>filename</th>
+      <th>World</th>
+      <th>Indonesia</th>
+      <th>Vietnam</th>
+      <th>Thailand</th>
+      <th>Philippines</th>
+      <th>Singapore</th>
+      <th>Malaysia</th>
+      <th>Myanmar</th>
+      <th>Laos</th>
+      <th>Cambodia</th>
+      <th>Brunei</th>
+      <th>Timor</th>
+      <th>score</th>
+      <th>note</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td>นายพงศธร กิตติวรปัญญา</td>
+      <td>covid_answer.csv</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>นายพงศธร กิตติวรปัญญา</td>
+      <td>covid_random.csv</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>Error</td>
+    </tr>
+  </tbody>
+</table>
+    </div>
+    <div id="max" class="tab" style="display:none">
+    <table border="1" class="dataframe leaderboard">
+  <thead>
+    <tr style="text-align: left;">
+      <th></th>
+      <th>name</th>
+      <th>filename</th>
+      <th>World</th>
+      <th>Indonesia</th>
+      <th>Vietnam</th>
+      <th>Thailand</th>
+      <th>Philippines</th>
+      <th>Singapore</th>
+      <th>Malaysia</th>
+      <th>Myanmar</th>
+      <th>Laos</th>
+      <th>Cambodia</th>
+      <th>Brunei</th>
+      <th>Timor</th>
+      <th>score</th>
+      <th>note</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td>นายพงศธร กิตติวรปัญญา</td>
+      <td>covid_answer.csv</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+    </div>
+
+    <div class="learnmore">
+    <p>
+        The evaluation metric for this task is mean squared error (MSE). Rank by MSE from lowest to highest.<br>
+        The score calculates by average all mse values of all countries --Lowest is best.<br>
+        <u>Learn more:</u>
+    </p>
+    <ul>
+        <li><a href="https://www.statisticshowto.com/probability-and-statistics/statistics-definitions/mean-squared-error/">https://www.statisticshowto.com/probability-and-statistics/statistics-definitions/mean-squared-error/</a></li>
+    </ul>
+    </div>
+</body>
+</html>
+    
