@@ -4,16 +4,26 @@ body{
     padding: 15px;
 }
 
-.leaderboard{
+.leaderboard,
+.leaderborad-regression{
     margin: auto;
     text-align: left;
     border: 1px solid #000;
     border-collapse: collapse;
 }
 
+.leaderboard-regression{
+    font-size: 0.8em;
+}
+
 .leaderboard th,
 .leaderboard td{
     padding: 5px 10px;
+}
+
+.leaderboard-regression th,
+.leaderboard-regression td{
+    padding: 5px 3px;
 }
 
 .leaderboard thead tr{
