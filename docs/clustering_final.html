@@ -1,0 +1,275 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rice Clustering Leaderboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1 class="topic">🌾 Rice Clustering Leaderboard</h1>
+    <p>🕓 Lastest update: 19/05/2022 20:13:46</p>
+    <p>(Update every 15 minutes, up to 5 files per submission)</p>
+
+    <div class="tabs-bar">
+      <button onclick="opentab('all')">All</button>
+      <button onclick="opentab('max')">Ranking</button>
+    </div>
+
+    <div id="all" class="tab" style="display:block">
+    <table border="1" class="dataframe leaderboard">
+  <thead>
+    <tr style="text-align: left;">
+      <th></th>
+      <th>name</th>
+      <th>filename</th>
+      <th>purity</th>
+      <th>nmi</th>
+      <th>rand_index</th>
+      <th>score</th>
+      <th>note</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td>นายอภิพล ด้วงเพียร</td>
+      <td>Clustering_62070242_62070278_62070285.csv</td>
+      <td>0.212173</td>
+      <td>0.000443</td>
+      <td>0.783516</td>
+      <td>0.332044</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>นายสรวิศ ยินดีอนันต์</td>
+      <td>Clustering_62070259-62070277-62070287.csv</td>
+      <td>0.210280</td>
+      <td>0.000353</td>
+      <td>0.780038</td>
+      <td>0.330224</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>นายสุทธิชัย สุทธิภูติ</td>
+      <td>Clustering_62070260_62070283(3).csv</td>
+      <td>0.205027</td>
+      <td>0.000156</td>
+      <td>0.720676</td>
+      <td>0.308620</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>นางสาวสุดารัตน์ หงษ์คำ</td>
+      <td>Clustering_62070251_62070252_62070282.csv</td>
+      <td>0.205533</td>
+      <td>0.000152</td>
+      <td>0.714551</td>
+      <td>0.306746</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>นายธีรวัฒน์ ซู</td>
+      <td>clustering_62070230-62070248-62070257.csv</td>
+      <td>0.204853</td>
+      <td>0.000108</td>
+      <td>0.714204</td>
+      <td>0.306388</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>นางสาวสุวภัทร มะนู</td>
+      <td>Clustering_62070237-62070240-62070284.csv</td>
+      <td>0.204747</td>
+      <td>0.000097</td>
+      <td>0.707837</td>
+      <td>0.304227</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>นายปุลวัชร ลี้เจริญ</td>
+      <td>Clustering_62070232-62070256-62070276.csv</td>
+      <td>0.205600</td>
+      <td>0.000140</td>
+      <td>0.701084</td>
+      <td>0.302275</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>นางสาวเนตรอัปสร โพธิ์จันทร์</td>
+      <td>Clustering_62070253_62070265_62070269.csv</td>
+      <td>0.205613</td>
+      <td>0.000112</td>
+      <td>0.700890</td>
+      <td>0.302205</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>นางสาววิชญา ฉิมสา</td>
+      <td>Clustering_62070235-62070270-62070286.csv</td>
+      <td>0.203347</td>
+      <td>0.000070</td>
+      <td>0.580820</td>
+      <td>0.261412</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>นางสาวธัญลักษณ์ คำยวน</td>
+      <td>Clustering_61070139_62070247_62070275.csv</td>
+      <td>0.203880</td>
+      <td>0.000092</td>
+      <td>0.579738</td>
+      <td>0.261237</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+    </div>
+    <div id="max" class="tab" style="display:none">
+    <table border="1" class="dataframe leaderboard">
+  <thead>
+    <tr style="text-align: left;">
+      <th></th>
+      <th>name</th>
+      <th>filename</th>
+      <th>purity</th>
+      <th>nmi</th>
+      <th>rand_index</th>
+      <th>score</th>
+      <th>note</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td>นายอภิพล ด้วงเพียร</td>
+      <td>Clustering_62070242_62070278_62070285.csv</td>
+      <td>0.212173</td>
+      <td>0.000443</td>
+      <td>0.783516</td>
+      <td>0.332044</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>นายสรวิศ ยินดีอนันต์</td>
+      <td>Clustering_62070259-62070277-62070287.csv</td>
+      <td>0.210280</td>
+      <td>0.000353</td>
+      <td>0.780038</td>
+      <td>0.330224</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>นายสุทธิชัย สุทธิภูติ</td>
+      <td>Clustering_62070260_62070283(3).csv</td>
+      <td>0.205027</td>
+      <td>0.000156</td>
+      <td>0.720676</td>
+      <td>0.308620</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>นางสาวสุดารัตน์ หงษ์คำ</td>
+      <td>Clustering_62070251_62070252_62070282.csv</td>
+      <td>0.205533</td>
+      <td>0.000152</td>
+      <td>0.714551</td>
+      <td>0.306746</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>นายธีรวัฒน์ ซู</td>
+      <td>clustering_62070230-62070248-62070257.csv</td>
+      <td>0.204853</td>
+      <td>0.000108</td>
+      <td>0.714204</td>
+      <td>0.306388</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>นางสาวสุวภัทร มะนู</td>
+      <td>Clustering_62070237-62070240-62070284.csv</td>
+      <td>0.204747</td>
+      <td>0.000097</td>
+      <td>0.707837</td>
+      <td>0.304227</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>นายปุลวัชร ลี้เจริญ</td>
+      <td>Clustering_62070232-62070256-62070276.csv</td>
+      <td>0.205600</td>
+      <td>0.000140</td>
+      <td>0.701084</td>
+      <td>0.302275</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>นางสาวเนตรอัปสร โพธิ์จันทร์</td>
+      <td>Clustering_62070253_62070265_62070269.csv</td>
+      <td>0.205613</td>
+      <td>0.000112</td>
+      <td>0.700890</td>
+      <td>0.302205</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>นางสาววิชญา ฉิมสา</td>
+      <td>Clustering_62070235-62070270-62070286.csv</td>
+      <td>0.203347</td>
+      <td>0.000070</td>
+      <td>0.580820</td>
+      <td>0.261412</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>นางสาวธัญลักษณ์ คำยวน</td>
+      <td>Clustering_61070139_62070247_62070275.csv</td>
+      <td>0.203880</td>
+      <td>0.000092</td>
+      <td>0.579738</td>
+      <td>0.261237</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+    </div>
+
+    <div class="learnmore">
+    <p>
+        The evaluation metric for this task are purity metric, normalized mutual information (NMI) and rand index.<br>
+        The score calculates by average all values from 3 metrics.<br>
+        <u>Learn more:</u>
+    </p>
+    <ul>
+        <li><a href="https://nlp.stanford.edu/IR-book/html/htmledition/evaluation-of-clustering-1.html">https://nlp.stanford.edu/IR-book/html/htmledition/evaluation-of-clustering-1.html</a></li>
+        <li><a href="https://gist.github.com/jhumigas/010473a456462106a3720ca953b2c4e2">https://gist.github.com/jhumigas/010473a456462106a3720ca953b2c4e2</a></li>
+        <li><a href="https://towardsdatascience.com/evaluation-metrics-for-clustering-models-5dde821dd6cd">https://towardsdatascience.com/evaluation-metrics-for-clustering-models-5dde821dd6cd</a></li>
+        <li><a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.normalized_mutual_info_score.html">https://scikit-learn.org/stable/modules/generated/sklearn.metrics.normalized_mutual_info_score.html</a></li>
+        <li><a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.rand_score.html#sklearn.metrics.rand_score">https://scikit-learn.org/stable/modules/generated/sklearn.metrics.rand_score.html#sklearn.metrics.rand_score</a></li>
+    </ul>
+    </div>
+</body>
+</html>
+    
