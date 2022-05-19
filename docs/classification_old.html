@@ -1,0 +1,296 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terrorist Attacks Leaderboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1 class="topic">Terrorist Attacks Leaderboard</h1>
+    <p>🕓 Lastest update: 09/05/2022 01:00:57</p>
+    <p>(Update every 15 minutes, up to 5 files per submission)</p>
+
+    <div class="tabs-bar">
+      <button onclick="opentab('all')">All</button>
+      <button onclick="opentab('max')">Ranking</button>
+    </div>
+
+    <div id="all" class="tab" style="display:block">
+    <table border="1" class="dataframe leaderboard">
+  <thead>
+    <tr style="text-align: left;">
+      <th></th>
+      <th>name</th>
+      <th>filename</th>
+      <th>accuracy</th>
+      <th>note</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td>นายณัฐนันท์ ทำทัน</td>
+      <td>Classification_62070242_62070278_62070285.csv</td>
+      <td>0.919907</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>นายปุลวัชร ลี้เจริญ</td>
+      <td>Classification_62070232_62070256_62070276.csv</td>
+      <td>0.919062</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>นางสาวสุวภัทร มะนู</td>
+      <td>Classification_62070237-62070240-62070284.csv</td>
+      <td>0.912004</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>นางสาวสุดารัตน์ หงษ์คำ</td>
+      <td>Classification_62070251_62070252_62070282.csv</td>
+      <td>0.910132</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>นายชนาธิป นวลศรี</td>
+      <td>Classification_62070235_62070270_62070286_ver2.csv</td>
+      <td>0.909618</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>นายชนาธิป นวลศรี</td>
+      <td>Classification_62070235_62070270_62070286.csv</td>
+      <td>0.908525</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>นายจิรายุ จุลกทัพพะ</td>
+      <td>Classification_62070231_62070234_62070238_ver5.csv</td>
+      <td>0.907133</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>นายปริตต์ จันทรทิพย์</td>
+      <td>Classification_62070255_62070263_62070273.csv</td>
+      <td>0.902941</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>นายธนกฤต พิชญาวุธ</td>
+      <td>Classification_62070244-62070245-62070264.csv</td>
+      <td>0.901218</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>นายรัชชานนท์ กิจเจริญ</td>
+      <td>Classification_rf.csv</td>
+      <td>0.900804</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>นางสาวอารยา เฉียวกุล</td>
+      <td>Classification_62070271-62070280-62070288.csv</td>
+      <td>0.894623</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>นายวีรินทร์ วรศักดิ์ธำรง</td>
+      <td>Classification_62070241-62070272-62070274.csv</td>
+      <td>0.877740</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>นายพันธกานต์ แก้วสังหาร</td>
+      <td>Classification_61070139-62070247-62070275.csv</td>
+      <td>0.874940</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>นายวรินทร ทองแก้ว</td>
+      <td>Classification_62070253_62070265_62070269.csv</td>
+      <td>0.866854</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>นายสิรวิชญ์ มิตรทอง</td>
+      <td>classification_v42.csv</td>
+      <td>0.866523</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>นางสาวกัญญานัชช์ คุ้มภู</td>
+      <td>Classification_62070230_62070248_62070257.csv</td>
+      <td>0.859017</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>นายสุทธิชัย สุทธิภูติ</td>
+      <td>Classification_62070260-62070283.csv</td>
+      <td>0.492519</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+    </div>
+    <div id="max" class="tab" style="display:none">
+    <table border="1" class="dataframe leaderboard">
+  <thead>
+    <tr style="text-align: left;">
+      <th></th>
+      <th>name</th>
+      <th>filename</th>
+      <th>accuracy</th>
+      <th>note</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td>นายณัฐนันท์ ทำทัน</td>
+      <td>Classification_62070242_62070278_62070285.csv</td>
+      <td>0.919907</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>นายปุลวัชร ลี้เจริญ</td>
+      <td>Classification_62070232_62070256_62070276.csv</td>
+      <td>0.919062</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>นางสาวสุวภัทร มะนู</td>
+      <td>Classification_62070237-62070240-62070284.csv</td>
+      <td>0.912004</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>นางสาวสุดารัตน์ หงษ์คำ</td>
+      <td>Classification_62070251_62070252_62070282.csv</td>
+      <td>0.910132</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>นายชนาธิป นวลศรี</td>
+      <td>Classification_62070235_62070270_62070286_ver2.csv</td>
+      <td>0.909618</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>นายจิรายุ จุลกทัพพะ</td>
+      <td>Classification_62070231_62070234_62070238_ver5.csv</td>
+      <td>0.907133</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>นายปริตต์ จันทรทิพย์</td>
+      <td>Classification_62070255_62070263_62070273.csv</td>
+      <td>0.902941</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>นายธนกฤต พิชญาวุธ</td>
+      <td>Classification_62070244-62070245-62070264.csv</td>
+      <td>0.901218</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>นายรัชชานนท์ กิจเจริญ</td>
+      <td>Classification_rf.csv</td>
+      <td>0.900804</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>นางสาวอารยา เฉียวกุล</td>
+      <td>Classification_62070271-62070280-62070288.csv</td>
+      <td>0.894623</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>นายวีรินทร์ วรศักดิ์ธำรง</td>
+      <td>Classification_62070241-62070272-62070274.csv</td>
+      <td>0.877740</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>นายพันธกานต์ แก้วสังหาร</td>
+      <td>Classification_61070139-62070247-62070275.csv</td>
+      <td>0.874940</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>นายวรินทร ทองแก้ว</td>
+      <td>Classification_62070253_62070265_62070269.csv</td>
+      <td>0.866854</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>นายสิรวิชญ์ มิตรทอง</td>
+      <td>classification_v42.csv</td>
+      <td>0.866523</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>นางสาวกัญญานัชช์ คุ้มภู</td>
+      <td>Classification_62070230_62070248_62070257.csv</td>
+      <td>0.859017</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>นายสุทธิชัย สุทธิภูติ</td>
+      <td>Classification_62070260-62070283.csv</td>
+      <td>0.492519</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+    </div>
+
+    <div class="learnmore">
+    <p>
+        The evaluation metric for this task is accuracy<br>
+        Rank by accuracy from highest to lowest.<br>
+        <u>Learn more:</u>
+    </p>
+    <ul>
+        <li><a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.accuracy_score.html">https://scikit-learn.org/stable/modules/generated/sklearn.metrics.accuracy_score.html</a></li>
+    </ul>
+    </div>
+</body>
+</html>
+    
